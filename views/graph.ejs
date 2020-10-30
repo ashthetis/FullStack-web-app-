@@ -1,0 +1,299 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/9da9738e9a.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,900,900i|Ubuntu&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>Dynamic Charts</title>
+    <section id="title">
+
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class = "navbar-brand" href="">MES DEMO</a>
+
+        <button class="navbar-toggler" type="button" data-toggle= "collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class= "collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class= "navbar-nav ml-auto">
+            <section id="lis">
+            <li id="news"><a href="/news">NEWS</a></li>
+          </section>
+          <section id="lis">
+            <li id="about"><a href="/about">CELL ENGINEERING</a></li>
+          </section>
+
+            <section id="lis">
+            <li id="contact"><a href="/contact">PROCESS ENGINEERING</a></li>
+          </section>
+
+
+            <section id="lis">
+            <li id="graph"><a href="/graph">GRAPHS</a></li>
+          </section>
+
+            <section id="lis">
+            <li id="graph"><a href="/newHeader">Hearder</a></li>
+          </section>
+
+          </ul>
+
+        </div>
+      </nav>
+
+    </section>
+  </head>
+  <body class= "py-5">
+
+
+  <!-- <div class = "col-lg-6 offset-lg-3">
+  <div class = "card">
+  <div class="card-body">
+    <h1>Dynamic Chart JS <button class="btn btn-success" onclick="updateChart()">Update</button> </h1>
+</div>
+<div class="card-body">
+    <canvas id="myChart"></canvas>
+
+    </div>
+    <div class="card-body">
+        <canvas id="myChart2"></canvas>
+
+        </div>
+</div>
+</div> -->
+
+<section id="pricing">
+
+<div class="row">
+
+<div class="pricing-column col-lg-4 col-md-6">
+
+
+  <div class="card">
+    <div class="card-header">
+      <h3>PMAX</h3>
+      <div class = "card">
+      <div class="card-body">
+        <h1>Dynamic Chart JS <button class="btn btn-success" onclick="updateChart()">Update</button> </h1>
+    </div>
+    <div class="card-body">
+        <canvas id="myChart"></canvas>
+
+        </div>
+
+    </div>
+
+    </div>
+    <div class="card-body">
+      <p>This is the PMAX Values.</p>
+      <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="pricing-column col-lg-4 col-md-6">
+
+  <div class="card">
+    <div class="card-header">
+      <h3>FF</h3>
+      <div class = "card">
+      <div class="card-body">
+        <h1>Dynamic Chart JS <button class="btn btn-success" onclick="updateChart()">Update</button> </h1>
+    </div>
+    <div class="card-body">
+        <canvas id="myChart3"></canvas>
+
+        </div>
+
+    </div>
+
+    </div>
+    <div class="card-body">
+      <p>This is the FF Values.</p>
+
+      <button class="btn btn-lg btn-block btn-dark"  type="button">Sign Up</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="pricing-column col-lg-4">
+
+  <div class="card">
+    <div class="card-header">
+      <h3>ISC</h3>
+      <div class = "card">
+      <div class="card-body">
+        <h1>Dynamic Chart JS <button class="btn btn-success" onclick="updateChart()">Update</button> </h1>
+    </div>
+    <div class="card-body">
+        <canvas id="myChart4"></canvas>
+
+        </div>
+
+    </div>
+
+    </div>
+    <div class="card-body">
+      <p>This is the ISC Values.</p>
+      <button class="btn btn-lg btn-block btn-dark"  type="button">Sign Up</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+    <script type="text/javascript">
+
+    var oldData =  [0, 10, 5, 2, 20, 30, 45];
+    var newData = [10,20,30,40,50,60,70];
+    var oldData1 =  [99, 80, 75, 62, 50, 40, 35];
+    var newData1 = [5,10,55,25,20,55,30];
+
+    var newLabels= ['April', 'May', 'June', 'July']
+
+
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'My First dataset',
+            // backgroundColor: 'rgb(0, 99, 132)',
+            borderColor: 'rgb(0, 99, 132)',
+            data: oldData
+        },
+
+        {
+            label: 'My Second dataset',
+            // backgroundColor: 'rgb(0, 200, 0)',
+            borderColor: 'rgb(0, 200, 0)',
+            data: oldData1
+        }
+        ]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+
+
+var ctx3 = document.getElementById('myChart3').getContext('2d');
+var chart3 = new Chart(ctx3, {
+// The type of chart we want to create
+type: 'line',
+
+// The data for our dataset
+data: {
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  datasets: [{
+      label: 'My First dataset',
+      // backgroundColor: 'rgb(0, 99, 132)',
+      borderColor: 'rgb(0, 99, 132)',
+      data: oldData
+  },
+
+  {
+      label: 'My Second dataset',
+      // backgroundColor: 'rgb(0, 200, 0)',
+      borderColor: 'rgb(0, 200, 0)',
+      data: oldData1
+  }
+  ]
+},
+
+// Configuration options go here
+options: {}
+});
+
+
+var ctx4 = document.getElementById('myChart4').getContext('2d');
+var chart4 = new Chart(ctx4, {
+// The type of chart we want to create
+type: 'line',
+
+// The data for our dataset
+data: {
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  datasets: [{
+      label: 'My First dataset',
+      // backgroundColor: 'rgb(0, 99, 132)',
+      borderColor: 'rgb(0, 99, 132)',
+      data: oldData
+  },
+
+  {
+      label: 'My Second dataset',
+      // backgroundColor: 'rgb(0, 200, 0)',
+      borderColor: 'rgb(0, 200, 0)',
+      data: oldData1
+  }
+  ]
+},
+
+// Configuration options go here
+options: {}
+});
+
+
+
+
+
+
+      function updateChart(){
+        chart.data.datasets[0].data = newData;
+        chart.data.datasets[0].data = newData1;
+        chart.data.labels = newLabels;
+
+        chart.update();
+      };
+
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+
+<%- include("partials/header") -%>
+  <h1>Cell Engineering</h1>
+  <p> <%= startingContent %> </p>
+
+  <section id="pricing">
+
+  <div class="row">
+
+  <div class="pricing-column col-lg-12 col-md-6 cl-lg" >
+
+
+    <div class="card">
+      <div class="card-header">
+        <!-- <h3>PMAX</h3> -->
+        <div class = "card">
+        <div class="card-body">
+ <!-- <button class="btn btn-lg btn-block btn-dark btn-success" onclick="updateChart()">PMAX</button> -->
+      </div>
+      <div class="card-body" >
+          <canvas id="myChart" height="110"></canvas>
+
+          </div>
+
+      </div>
+
+      </div>
+      <div class="card-body">
+        <p>This is the PMAX Values.</p>
+        <!-- <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button> -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+      <script type="text/javascript">
+
+      var oldData =  [0, 10, 5, 2, 20, 30, 45];
+      var newData = [10,20,30,40,50,60,70];
+      var oldData1 =  [99, 80, 75, 62, 50, 40, 35];
+      var newData1 = [5,10,55,25,20,55,30];
+      var oldData2 =  [5, 4, 34, 62, 71, 56, 69];
+      var oldData3 =  [81, 55, 92, 53, 65, 81, 5];
+
+
+
+      var newLabels= ['April', 'May', 'June', 'July']
+
+
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+      // The type of chart we want to create
+      type: 'line',
+
+      // The data for our dataset
+      data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+              label: 'PMAX',
+              // backgroundColor: 'rgb(0, 99, 132)',
+              borderColor: 'rgb(0, 99, 132)',
+              data: oldData
+          },
+
+          {
+              label: 'ISC',
+              // backgroundColor: 'rgb(0, 200, 0)',
+              borderColor: 'rgb(0, 200, 0)',
+              data: oldData1
+          }
+          ,
+
+          {
+              label: 'VOC',
+              // backgroundColor: 'rgb(0, 200, 0)',
+              borderColor: 'rgb(246, 18, 18)',
+              data: oldData2
+          }
+          ,
+
+          {
+              label: 'FF',
+              // backgroundColor: 'rgb(0, 200, 0)',
+              borderColor: 'rgb(14, 0, 0)',
+              data: oldData3
+          }
+          ]
+      },
+
+      // Configuration options go here
+      options: {}
+  });
+
+
+
+  var ctx3 = document.getElementById('myChart3').getContext('2d');
+  var chart3 = new Chart(ctx3, {
+  // The type of chart we want to create
+  type: 'line',
+
+  // The data for our dataset
+  data: {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [{
+        label: 'My First dataset',
+        // backgroundColor: 'rgb(0, 99, 132)',
+        borderColor: 'rgb(0, 99, 132)',
+        data: oldData
+    },
+
+    {
+        label: 'My Second dataset',
+        // backgroundColor: 'rgb(0, 200, 0)',
+        borderColor: 'rgb(0, 200, 0)',
+        data: oldData1
+    }
+    ]
+  },
+
+  // Configuration options go here
+  options: {}
+  });
+
+
+  var ctx4 = document.getElementById('myChart4').getContext('2d');
+  var chart4 = new Chart(ctx4, {
+  // The type of chart we want to create
+  type: 'line',
+
+  // The data for our dataset
+  data: {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [{
+        label: 'My First dataset',
+        // backgroundColor: 'rgb(0, 99, 132)',
+        borderColor: 'rgb(0, 99, 132)',
+        data: oldData
+    },
+
+    {
+        label: 'My Second dataset',
+        // backgroundColor: 'rgb(0, 200, 0)',
+        borderColor: 'rgb(0, 200, 0)',
+        data: oldData1
+    }
+    ]
+  },
+
+  // Configuration options go here
+  options: {}
+  });
+
+
+
+
+
+
+        function updateChart(){
+          chart.data.datasets[0].data = newData;
+          chart.data.datasets[0].data = newData1;
+          chart.data.labels = newLabels;
+
+          chart.update();
+        };
+
+
+      </script>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<%- include("partials/footer") -%>
